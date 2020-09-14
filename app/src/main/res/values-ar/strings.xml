@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Gaming">مسار الالعاب</string>
+    <string name="app_name">Intro Slider</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="connect_with_me">Connect with me</string>
+    <string name="welcome_to">مرحبا بكم</string>
+    <string name="Theworldofprogramming">عالم البرمجه</string>
+    <string name="Inourworld">في عالمنا</string>
+    <string name="start">ابدا معنا في التعلم </string>
+    <string name="next">التالي</string>
+    <string name="welcome_to_the_world_of_ahmed_ghanem">Welcome to  </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">الصفحه الرئيسيه</string>
+    <string name="book">الكتب البرمجيه</string>
+    <string name="library">المقالات</string>
+    <string name="me">عن المطور</string>
+    <string name="developer_name">من انا</string>
+    <string name="send_message">التواصل معي</string>
+    <string name="shara">شارك التطبيق</string>
+    <string name="rate_the_app">قيم التطبيق</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="MobileApplication">تطبيقات الاندرويد</string>
+    <string name="webDeveloper">مطور الويب</string>
+    <string name="Iphone">تطبيقات الايفون</string>
+    <string name="web_designer">مصمم الويب</string>
+    <string name="DesktopApplications">تطبيقات سطح المكتب</string>
+</resources>

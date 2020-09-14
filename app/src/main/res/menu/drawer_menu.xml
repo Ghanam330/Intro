@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_24"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/book"
+            android:icon="@drawable/book"
+            android:title="@string/book" />
+        <item
+            android:id="@+id/library"
+            android:icon="@drawable/library"
+            android:title="@string/library"/>
+
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="@string/shara" />
+            <item
+                android:id="@+id/stars"
+                android:icon="@drawable/stars"
+                android:title="@string/rate_the_app"/>
+
+    </group>
+    <group android:checkableBehavior="single">
+       <item android:title="@string/me">
+            <menu>
+
+                <item
+                    android:id="@+id/percon"
+                    android:icon="@drawable/person_ahmed"
+                    android:title="@string/developer_name" />
+                <item
+                    android:id="@+id/send"
+                    android:icon="@drawable/send"
+                    android:title="@string/send_message"/>
+            </menu>
+
+        </item>
+    </group>
+</menu>
