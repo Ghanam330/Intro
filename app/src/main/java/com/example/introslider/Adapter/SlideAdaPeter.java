@@ -1,4 +1,4 @@
-package com.example.introslider.SplashSkrean;
+package com.example.introslider.Adapter;
 
 
 import android.view.LayoutInflater;
@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.example.introslider.R;
+import com.example.introslider.Model.SlideItem;
 
 import java.util.List;
 

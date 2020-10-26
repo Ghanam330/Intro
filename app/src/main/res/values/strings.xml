@@ -3,12 +3,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="connect_with_me">Connect with me</string>
-    <string name="who_is_the_developer">Who is the developer</string>
-    <string name="who_am_i">who am I</string>
     <string name="rate_the_app">Rate the app</string>
-    <string name="send">send</string>
     <string name="shara">Shara</string>
-    <string name="about_the_application">About the application</string>
     <string name="welcome_to">Welcome to</string>
     <string name="Theworldofprogramming">The world of programming</string>
     <string name="Inourworld">In our world</string>
@@ -25,10 +21,11 @@
     <string name="send_message">Send Message</string>
     <string name="MobileApplication">MobileApplication</string>
     <string name="webDeveloper">Web Developer</string>
-    <string name="Iphone">Iphone</string>
+    <string name="Iphone">IphoneApplication</string>
     <string name="Gaming">Gaming</string>
     <string name="web_designer">Web designer</string>
     <string name="DesktopApplications">Desktop applications</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
 

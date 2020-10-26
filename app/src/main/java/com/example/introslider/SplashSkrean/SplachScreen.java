@@ -1,29 +1,29 @@
-package com.example.introslider;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
-import androidx.viewpager2.widget.ViewPager2;
+package com.example.introslider.SplashSkrean;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.viewpager2.widget.ViewPager2;
+
+import com.example.introslider.Adapter.SlideAdaPeter;
 import com.example.introslider.MainActivity2;
+import com.example.introslider.Model.SlideItem;
 import com.example.introslider.R;
-import com.example.introslider.SplashSkrean.SlideAdaPeter;
-import com.example.introslider.SplashSkrean.SlideItem;
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+
+public class SplachScreen extends AppCompatActivity {
+
     private SlideAdaPeter onboardingAdapter;
     private LinearLayout linearLayout;
     private MaterialButton materialButton;
@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.splach_screen);
+
         linearLayout = findViewById(R.id.layoutonboarding);
         materialButton = findViewById(R.id.btnAction);
 
@@ -57,12 +58,17 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     startActivity(new Intent(getApplicationContext(),
                             MainActivity2.class));
-
+                    finish();
 
                 }
             }
         });
+
     }// end onCreate
+
+
+
+
 
 
     private void setuponboardingItems() {
@@ -70,19 +76,19 @@ public class MainActivity extends AppCompatActivity {
 
         SlideItem itemOne = new SlideItem();
         itemOne.setTitle(getString(R.string.welcome_to));
-     //   itemOne.setDescription("Lorem Ipsum is simply dummy text of the Printhing and typesetting industry.");
+        //   itemOne.setDescription("Lorem Ipsum is simply dummy text of the Printhing and typesetting industry.");
         itemOne.setImage(R.drawable.seven);
 
 
         SlideItem itemTwo = new SlideItem();
         itemTwo.setTitle(getString(R.string.Inourworld));
-   //     itemTwo.setDescription("Lorem Ipsum is simply dummy text of the Printhing and typesetting industry.");
+        //     itemTwo.setDescription("Lorem Ipsum is simply dummy text of the Printhing and typesetting industry.");
         itemTwo.setImage(R.drawable.five);
 
 
         SlideItem itemThree = new SlideItem();
         itemThree.setTitle(getString(R.string.Theworldofprogramming));
-   //     itemThree.setDescription("Lorem Ipsum is simply dummy text of the Printhing and typesetting industry.");
+        //     itemThree.setDescription("Lorem Ipsum is simply dummy text of the Printhing and typesetting industry.");
         itemThree.setImage(R.drawable.six);
 
         slideItems.add(itemOne);

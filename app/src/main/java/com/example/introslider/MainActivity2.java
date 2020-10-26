@@ -13,10 +13,9 @@ import android.os.Bundle;
 
 import android.view.MenuItem;
 
-import com.example.introslider.Article.ArticleFragment;
-import com.example.introslider.Book.BookFragment;
-import com.example.introslider.Home.HomeFragment;
-import com.example.introslider.R;
+
+import com.example.introslider.Activity.PatchFragment;
+
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -28,23 +27,25 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
         drawer = findViewById(R.id.draw_layout);
         NavigationView navigationView = findViewById(R.id.navView);
         navigationView.setNavigationItemSelectedListener(this);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer,toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new HomeFragment()).commit();
+                    new PatchFragment()).commit();
             navigationView.setCheckedItem(R.id.home);
         }// end if
-
-
-
 
 
     }// end  onCreate
@@ -52,36 +53,56 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        String title = getString(R.string.app_name);
         switch (item.getItemId()) {
             case R.id.home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new HomeFragment()).commit();
+                        new PatchFragment()).commit();
+               // title=getString(R.string.title_home);
                 break;
             case R.id.book:
+                /*
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new BookFragment()).commit();
+
+                 */
+               // title=getString(R.string.title_book);
                 break;
             case R.id.library:
+                /*
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ArticleFragment()).commit();
+
+                 */
+                title=getString(R.string.title_Library);
                 break;
             case R.id.share:
                 shara();
+             //   title=getString(R.string.title_home);
                 //code share
+
                 break;
             case R.id.stars:
                 //code stars
                 stars();
+             //   title=getString(R.string.title_home);
                 break;
             case R.id.percon:
                 //code person
+
+
+              //  title=getString(R.string.title_percon);
                 break;
             case R.id.send:
                 send();
                 //code send
+               // title=getString(R.string.title_home);
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);
+
+        // set the toolbar title
+        getSupportActionBar().setTitle(title);
         return true;
     }
 
