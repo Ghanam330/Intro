@@ -25,6 +25,8 @@
     <string name="Gaming">Gaming</string>
     <string name="web_designer">Web designer</string>
     <string name="DesktopApplications">Desktop applications</string>
+    <string name="Note">note</string>
+    <string name="chat">Chat</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

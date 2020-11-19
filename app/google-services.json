@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "365070223155",
+    "firebase_url": "https://intro-slider-82f6f.firebaseio.com",
+    "project_id": "intro-slider-82f6f",
+    "storage_bucket": "intro-slider-82f6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365070223155:android:a2c0248b150ba05972e046",
+        "android_client_info": {
+          "package_name": "com.example.introslider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365070223155-29qpgurtff55b8cj1u0vukugofjs2kua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdgt7sH88RoMypNkiQwI0SnII9qocuYwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365070223155-29qpgurtff55b8cj1u0vukugofjs2kua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

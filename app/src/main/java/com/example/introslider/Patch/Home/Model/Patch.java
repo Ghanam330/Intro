@@ -1,4 +1,4 @@
-package com.example.introslider.Model;
+package com.example.introslider.Patch.Home.Model;
 
 public class Patch {
    private String image;

@@ -6,10 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    app:startDestination="@+id/nav_home"
     tools:context=".MainActivity2"
-    tools:openDrawer="start"
->
+    tools:openDrawer="start">
 
 
     <LinearLayout

@@ -20,6 +20,14 @@
             android:icon="@drawable/ic_baseline_library_books_24"
             android:title="@string/library"/>
 
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/chat"
+            android:title="@string/chat" />
+        <item
+            android:id="@+id/note"
+            android:icon="@drawable/notebook"
+            android:title="Note" />
             <item
                 android:id="@+id/share"
                 android:icon="@drawable/share"

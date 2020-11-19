@@ -7,4 +7,24 @@
     <color name="colorTextSecondary">#757575</color>
     <color name="Background">#ffffff</color>
     <color name="onboardinIndicator">#72BCF7</color>
+    <color name="colorQuickActionBackground">#2F2D2E</color>
+    <color name="colorWhite">#Ffffff</color>
+    <color name="colorAdd">#FDBE3B</color>
+    <color name="colorIcon">#A4A4A4</color>
+
+
+    <color name="colorSearchIcon">#DBDBDB</color>
+    <color name="colorTextHint">#7B7B7B</color>
+
+
+    <color name="colorTextSubtitle">#CECECE</color>
+    <color name="colorDefaultNoteColor">#333333</color>
+    <color name="colorNoteSubTitleText">#FAFAFA</color>
+    <color name="colorMiscellaneousBackground">#1F1F1F</color>
+    <color name="colorNoteColor2">#FDBE3B</color>
+    <color name="colorColor3">#FF4842</color>
+    <color name="colorColor4">#3A52Fc</color>
+    <color name="colorColor5">#000000</color>
+    <color name="colorDelete">#FF4842</color>
+    <color name="colorSearchBackground">#333333</color>
 </resources>

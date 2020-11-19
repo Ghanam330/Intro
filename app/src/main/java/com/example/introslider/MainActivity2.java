@@ -1,5 +1,10 @@
 package com.example.introslider;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,16 +12,12 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-
-import android.view.MenuItem;
-
-
-import com.example.introslider.Activity.PatchFragment;
-
+import com.example.introslider.Chat.ChatActivity;
+import com.example.introslider.Note.NoteFragment;
+import com.example.introslider.Patch.Home.Activity.PatchFragment;
 import com.google.android.material.navigation.NavigationView;
+
+import java.util.Objects;
 
 
 public class MainActivity2 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -31,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
 
 
         drawer = findViewById(R.id.draw_layout);
@@ -46,19 +47,17 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
                     new PatchFragment()).commit();
             navigationView.setCheckedItem(R.id.home);
         }// end if
-
-
     }// end  onCreate
 
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        String title = getString(R.string.app_name);
+        String title =""; //getString(R.string.app_name);
         switch (item.getItemId()) {
             case R.id.home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new PatchFragment()).commit();
-               // title=getString(R.string.title_home);
+                title=getString(R.string.home);
                 break;
             case R.id.book:
                 /*
@@ -74,7 +73,7 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
                         new ArticleFragment()).commit();
 
                  */
-                title=getString(R.string.title_Library);
+            //    title=getString(R.string.title_Library);
                 break;
             case R.id.share:
                 shara();
@@ -97,6 +96,25 @@ public class MainActivity2 extends AppCompatActivity implements NavigationView.O
                 send();
                 //code send
                // title=getString(R.string.title_home);
+                break;
+            case R.id.chat:
+                /*
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ChatFragment()).commit();
+
+                 */
+
+                Intent intent=new Intent(MainActivity2.this, ChatActivity.class);
+                startActivity(intent);
+                finish();
+
+                // title=getString(R.string.title_home);
+                break;
+            case R.id.note:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new NoteFragment()).commit();
+
+                 title=getString(R.string.Note);
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);

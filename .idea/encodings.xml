@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/introslider/Adapter/PatchAdapter.java" charset="windows-1256" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/introslider/Model/Patch.java" charset="windows-1256" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/introslider/Chat/ChatAdapter.java" charset="windows-1256" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/introslider/Patch/Home/Adapter/InformationAdapter.java" charset="windows-1256" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/introslider/Patch/Home/Adapter/PatchAdapter.java" charset="windows-1256" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/introslider/Patch/Home/Model/Information.java" charset="windows-1256" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/introslider/Patch/Home/Model/Patch.java" charset="windows-1256" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/patch_item.xml" charset="windows-1256" />
   </component>
 </project>

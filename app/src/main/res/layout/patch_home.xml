@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Activity.PatchFragment"
+    tools:context=".Patch.Home.Activity.PatchFragment"
     android:id="@+id/nav_home"
     android:theme="@style/Theme.AppCompat.Light">
 

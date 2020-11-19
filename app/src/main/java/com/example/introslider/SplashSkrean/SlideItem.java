@@ -1,4 +1,4 @@
-package com.example.introslider.Model;
+package com.example.introslider.SplashSkrean;
 
 public class SlideItem {
     private int image;

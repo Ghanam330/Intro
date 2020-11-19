@@ -12,9 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.introslider.Adapter.SlideAdaPeter;
 import com.example.introslider.MainActivity2;
-import com.example.introslider.Model.SlideItem;
 import com.example.introslider.R;
 import com.google.android.material.button.MaterialButton;
 
