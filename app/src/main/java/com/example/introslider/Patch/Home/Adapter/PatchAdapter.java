@@ -46,20 +46,20 @@ public class PatchAdapter extends FirebaseRecyclerAdapter<Patch, PatchAdapter.My
 
 
 
-               /*
-            Intent patch=new Intent(v.getContext(), InformationActivity.class);
-         //  patch.putExtra("PatchId",adapter.getRef(position).getKey());
+           /*
+        Intent patch=new Intent(v.getContext(), InformationActivity.class);
+     //  patch.putExtra("PatchId",adapter.getRef(position).getKey());
 
-                    Intent intent =new Intent(context, InformationActivity.class);
-                    intent.putExtra("name",model.getName());
-                  //  intent.putExtra("Image",model.getImage());
-                    intent.setType("image/*");
-                    intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-                    intent.setAction(Intent.ACTION_GET_CONTENT);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    context.startActivity(intent);
+                Intent intent =new Intent(context, InformationActivity.class);
+                intent.putExtra("name",model.getName());
+              //  intent.putExtra("Image",model.getImage());
+                intent.setType("image/*");
+                intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
 
-                     */
+                 */
         });
 
     }
